@@ -1,0 +1,46 @@
+{
+    "landlord_details": {
+        "name(s)": "string",
+        "physical_address_for_service": "string",
+        "email": "string (optional)",
+        "phone": {
+            "mobile": "string (optional)",
+            "home": "string (optional)",
+            "work": "string (optional)"
+        },
+        "other_contact_addresses": "string (optional)",
+        "additional_address_for_service": "string (optional)"
+    },
+    "tenant_details": {
+        "name(s)": "string",
+        "identification": {
+            "type": "enum (driver's licence, passport, other)",
+            "id_number": "string"
+        },
+        "physical_address_for_service": "string",
+        "email": "string (optional)",
+        "phone": {
+            "mobile": "string (optional)",
+            "home": "string (optional)",
+            "work": "string (optional)"
+        },
+        "other_contact_addresses": "string (optional)",
+        "additional_address_for_service": "string (optional)",
+        "is_any_tenant_under_the_age_of_18": "boolean"
+    },
+    "tenancy_details": {
+        "address_of_tenancy": "string",
+        "body_corporate_rules_attached": "boolean (optional)",
+        "rent_per_week": "float",
+        "payment_frequency": "enum (weekly, fortnightly)",
+        "bond_amount": "float",
+        "rent_payment_details": {
+            "payment_at": "string (optional)",
+            "bank_account_details": {
+                "account_no": "string (optional)",
+                "account_name": "string (optional)",
+                "bank_branch": "string (optional)"
+            }
+        }
+    }
+}
